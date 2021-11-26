@@ -5,9 +5,9 @@ env:
   NEW_REGISTRY_URL2: "docker.io/skydoor/" 
   
 on:
-   push: 
-     paths: 
-     - '.github/workflows/**' 
+  push: 
+    paths: 
+      - '.github/workflows/**' 
 
 jobs: 
   build: 
