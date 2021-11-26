@@ -22,4 +22,3 @@ jobs:
         docker pull k8s.gcr.io/descheduler/descheduler:v0.22.1 
         docker tag k8s.gcr.io/descheduler/descheduler:v0.22.1 registry.cn- hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1 
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1
-
