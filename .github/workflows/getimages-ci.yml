@@ -22,7 +22,26 @@ jobs:
         echo ${NEW_REGISTRY_URL} 
         docker login -u ${{ secrets.MY_ALI_REGISTRY_USERNAME}} -p ${{ secrets.MY_ALI_REGISTRY_PASSWD}} ${NEW_REGISTRY_URL} 
         echo "docker pull from k8s gcr io" 
-        docker pull k8s.gcr.io/descheduler/descheduler:v0.22.1 
-        docker tag k8s.gcr.io/descheduler/descheduler:v0.22.1 registry.cn-hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1 
-        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1
+        #docker pull k8s.gcr.io/descheduler/descheduler:v0.22.1 
+        #docker tag k8s.gcr.io/descheduler/descheduler:v0.22.1 registry.cn-hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1 
+        #docker push registry.cn-hangzhou.aliyuncs.com/baiquan/descheduler:v0.22.1
+        
+        docker pull k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.0.1
+        docker pull k8s.gcr.io/sig-storage/csi-resizer:v1.0.1
+        docker pull k8s.gcr.io/sig-storage/csi-provisioner:v2.0.4
+        docker pull k8s.gcr.io/sig-storage/csi-attacher:v3.0.2
+        docker pull k8s.gcr.io/sig-storage/csi-snapshotter:v4.0.0
+        
+        docker tag k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.0.1  registry.cn-hangzhou.aliyuncs.com/baiquan/csi-node-driver-registrar:v2.0.1
+        docker tag k8s.gcr.io/sig-storage/csi-resizer:v1.0.1  registry.cn-hangzhou.aliyuncs.com/baiquan/csi-resizer:v1.0.1
+        docker tag k8s.gcr.io/sig-storage/csi-provisioner:v2.0.4  registry.cn-hangzhou.aliyuncs.com/baiquan/csi-provisioner:v2.0.4
+        docker tag k8s.gcr.io/sig-storage/csi-attacher:v3.0.2  registry.cn-hangzhou.aliyuncs.com/baiquan/csi-attacher:v3.0.2
+        docker tag k8s.gcr.io/sig-storage/csi-snapshotter:v4.0.0  registry.cn-hangzhou.aliyuncs.com/baiquan/csi-snapshotter:v4.0.0
+        
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/csi-node-driver-registrar:v2.0.1
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/csi-resizer:v1.0.1
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/csi-provisioner:v2.0.4
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/csi-attacher:v3.0.2
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/csi-snapshotter:v4.0.0
 
+        
