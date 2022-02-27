@@ -61,16 +61,16 @@ jobs:
         docker tag k8s.gcr.io/kube-scheduler:v1.21.2           registry.cn-hangzhou.aliyuncs.com/baiquan/kube-scheduler:v1.21.2         
         docker tag k8s.gcr.io/kube-proxy:v1.21.2               registry.cn-hangzhou.aliyuncs.com/baiquan/kube-proxy:v1.21.2             
         docker tag k8s.gcr.io/pause:3.3                        registry.cn-hangzhou.aliyuncs.com/baiquan/pause:3.3                      
-        docker tag k8s.gcr.io/coredns/coredns:v1.8.0           registry.cn-hangzhou.aliyuncs.com/baiquan/coredns/coredns:v1.8.0         
-        docker tag k8s.gcr.io/dns/k8s-dns-node-cache:1.21.1    registry.cn-hangzhou.aliyuncs.com/baiquan/dns/k8s-dns-node-cache:1.21.1  
+        docker tag k8s.gcr.io/coredns/coredns:v1.8.0           registry.cn-hangzhou.aliyuncs.com/baiquan/coredns:v1.8.0         
+        docker tag k8s.gcr.io/dns/k8s-dns-node-cache:1.21.1    registry.cn-hangzhou.aliyuncs.com/baiquan/k8s-dns-node-cache:1.21.1  
         
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kube-apiserver:v1.21.2         
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kube-controller-manager:v1.21.2
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kube-scheduler:v1.21.2         
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kube-proxy:v1.21.2             
         docker push registry.cn-hangzhou.aliyuncs.com/baiquan/pause:3.3                      
-        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/coredns/coredns:v1.8.0         
-        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/dns/k8s-dns-node-cache:1.21.1         
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/coredns:v1.8.0         
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/k8s-dns-node-cache:1.21.1         
         
         
         
