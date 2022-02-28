@@ -1,7 +1,7 @@
 # This is a basic workflow to help you get started with Actions 
 name: Get Docker images from gcr 
 env:
-  NEW_REGISTRY_URL: "registry.cn-hangzhou.aliyuncs.com/baiquan/" 
+  NEW_REGISTRY_URL: "registry.cn-hangzhou.aliyuncs.com/gdmcc/" 
   NEW_REGISTRY_URL2: "docker.io/skydoor/" 
   
 on:
@@ -58,7 +58,7 @@ jobs:
         docker pull k8s.gcr.io/cpa/cluster-proportional-autoscaler-amd64:1.8.5
         
         docker tag k8s.gcr.io/kube-apiserver:v1.21.2           registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-apiserver:v1.21.2         
-        docker tag k8s.gcr.io/kube-controller-manager:v1.21.2  registry.cn-hangzhou.aliyuncs.com/baiquan/kube-controller-manager:v1.21.2
+        docker tag k8s.gcr.io/kube-controller-manager:v1.21.2  registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-controller-manager:v1.21.2
         docker tag k8s.gcr.io/kube-scheduler:v1.21.2           registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-scheduler:v1.21.2         
         docker tag k8s.gcr.io/kube-proxy:v1.21.2               registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-proxy:v1.21.2             
         docker tag k8s.gcr.io/pause:3.3                        registry.cn-hangzhou.aliyuncs.com/gdmcc/pause:3.3                      
