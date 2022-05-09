@@ -82,8 +82,8 @@ jobs:
         
         
         docker pull gcr.io/cadvisor/cadvisor:v0.38.0
-        docker tag  gcr.io/cadvisor/cadvisor:v0.38.0  registry.cn-hangzhou.aliyuncs.com/gdmcc/v0.38.0
-        
+        docker tag  gcr.io/cadvisor/cadvisor:v0.38.0  registry.cn-hangzhou.aliyuncs.com/gdmcc/cadvisor:v0.38.0
+        docker push registry.cn-hangzhou.aliyuncs.com/gdmcc/cadvisor:v0.38.0
  
  
  
