@@ -75,14 +75,14 @@ jobs:
         #docker push registry.cn-hangzhou.aliyuncs.com/gdmcc/k8s-dns-node-cache:1.21.1     
         #docker push registry.cn-hangzhou.aliyuncs.com/gdmcc/cluster-proportional-autoscaler-amd64:1.8.5
         
-        
-        
+              
         docker pull k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
         docker tag k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1  registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-webhook-certgen:v1.1.1
         docker push registry.cn-hangzhou.aliyuncs.com/gdmcc/kube-webhook-certgen:v1.1.1
         
         
-        
+        docker pull gcr.io/cadvisor/cadvisor:v0.38.0
+        docker tag  gcr.io/cadvisor/cadvisor:v0.38.0  registry.cn-hangzhou.aliyuncs.com/gdmcc/v0.38.0
         
  
  
