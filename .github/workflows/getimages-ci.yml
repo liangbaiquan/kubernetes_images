@@ -89,13 +89,13 @@ jobs:
         #docker tag k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2 registry.cn-hangzhou.aliyuncs.com/gdmcc/nfs-subdir-external-provisioner:v4.0.2
         #docker push registry.cn-hangzhou.aliyuncs.com/gdmcc/nfs-subdir-external-provisioner:v4.0.2
  
-        #docker pull kubesphere/ks-installer:v3.3.0
-        #docker tag kubesphere/ks-installer:v3.3.0 registry.cn-hangzhou.aliyuncs.com/baiquan/kubesphere/ks-installer:v3.3.0
-        #docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kubesphere/ks-installer:v3.3.0
+        docker pull kubesphere/ks-installer:v3.3.0
+        docker tag kubesphere/ks-installer:v3.3.0 registry.cn-hangzhou.aliyuncs.com/baiquan/kubesphere/ks-installer:v3.3.0
+        docker push registry.cn-hangzhou.aliyuncs.com/baiquan/kubesphere/ks-installer:v3.3.0
 
-        docker pull k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:latest
-        docker tag k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:latest  registry.cn-hangzhou.aliyuncs.com/baiquan/nfs-subdir-external-provisioner:latest
-        docker pull registry.cn-hangzhou.aliyuncs.com/baiquan/nfs-subdir-external-provisioner:latest
+        #docker pull k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:latest
+        #docker tag k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:latest  registry.cn-hangzhou.aliyuncs.com/baiquan/nfs-subdir-external-provisioner:latest
+        #docker pull registry.cn-hangzhou.aliyuncs.com/baiquan/nfs-subdir-external-provisioner:latest
         
         
         
